@@ -1,0 +1,144 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(rgb(40, 40, 40), rgb(160, 160, 160));
+    background-color: slategrey;
+    border-bottom: 2px solid deepskyblue;
+}
+
+h1 {
+    letter-spacing: .3em;
+    font-family: Helvetica, sans-serif;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid darkblue;
+    background-color: slateblue;
+}
+
+img {
+    border: 1px solid darkblue;
+}
+
+article {
+    border-bottom: 2px solid deepskyblue;
+}
+
+h2 {
+    padding: 25px;
+    text-align: center;
+    font-size: 36px;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 24px;
+}
+
+nav {
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul, li {
+    display: inline;
+    padding-inline: 25px;
+}
+
+main {
+    background-image: linear-gradient(to top, rgb(40, 40, 40), rgb(160, 160, 160));
+}
+
+p {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+h2 > p {
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe p {
+    padding: 5%;
+}
+
+.work {
+    display: flex;
+    border-bottom: 2px solid deepskyblue;
+}
+
+.contact {
+    padding: 2%;
+}
+
+#accentLetter {
+    color: slateblue;
+}
+
+#accentLetter2 {
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.projects {
+    padding: 5%;
+}
+
+.project1div, .project2and3div, .project4and5div {
+    display: flex;
+}
+
+.project1 {
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: auto;
+}
+
+.project2, .project3, .project4, .project5 {
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.project1img, .project2img, .project3img, .project4img, .project5img {
+    position: relative;
+    transition: all .5s;
+}
+
+.project1img:hover, .project2img:hover, .project3img:hover, .project4img:hover, .project5img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid deepskyblue;
+}
+
+@media all and (max-width: 800px) {
+    .project1div, .project2and3div, .project4and5div {
+        flex-direction: column;
+    }
+}
