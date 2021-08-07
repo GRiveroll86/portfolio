@@ -131,6 +131,7 @@ footer {
     transition: all 0.5s;
     cursor: pointer;
     border: 2px solid deepskyblue;
+    transform-origin: center;
 }
 
 @media all and (max-width: 800px) {
