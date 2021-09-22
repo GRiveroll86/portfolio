@@ -1,7 +1,7 @@
 # Advanced CSS
 
 ## Website Link
-[Professional Portfolio](https://griveroll86.github.io/portfolio/index.html)
+[Professional Portfolio](https://griveroll86.github.io/portfolio/)
 
 ## Portfolio
 
