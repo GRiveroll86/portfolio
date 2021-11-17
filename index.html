@@ -2,81 +2,127 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Greg Riveroll - Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Greg Riveroll</title>
 </head>
 
 <body>
 
     <header class="header">
-        <h1><span id="accentLetter">G</span>reg <span id="accentLetter">R</span>iveroll</h1>
-        <img src="assets/images/avatar.png" class="avatar" alt="avatar image" />
-        <nav>
-            <ul>
-                <li>
-                    <a href="#aboutMe" class="navLink">About Me</a>
-                </li>
-                <li>
-                    <a href="#work" class="navLink">Work</a>
-                </li>
-                <li>
-                    <a href="#contact" class="navLink">Contact</a>
-                </li>
-                <li>
-                    <a href="https://google.com" target="_blank" class="navLink">Resume</a>
-                </li>
-            </ul>
+
+        <div id="name-container">
+            <h1 id="name"><strong>GREG RIVEROLL</strong></h1>
+        </div>
+        
+
+        <div id="portrait-container">
+            <img src="assets/images/portrait.png" id="portrait" alt="greg riveroll portrait image" />
+        </div>
+
+        <nav id="navbar-container">
+            <div class="nav-link">
+                <a href="#about-me-container" class="link"><strong>ABOUT ME</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="#projects-container" class="link"><strong>PROJECTS</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="#contact-container" class="link"><strong>CONTACT</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="./assets/Resume.pdf" target="_blank" class="link"><strong>RESUME</strong></a>
+            </div>
         </nav>
+
     </header>
 
-    <article class="aboutMe">
-        <a id="aboutMe"></a>
-        <h2>About Me</h2>
-        <p>
-            My name is Greg Riveroll. I've been in corrections for over six years as a correction officer and a storekeeper in the commissary. My passion for
-            computers and technology led me to seek further education in web development as I hope to pursue an exciting new career path. Below are some examples
-            of my work. Click on the name of the project to see the repository and click on the image to see the deployed application. Thanks and enjoy!
-        </p>
-    </article>
+    <main id="main-container">
 
-    <main class="work">
-        <a id="work"></a>
-        <div class="projects">
-            <div class="project1div">
-                <div class="project1">
-                    <h3><a href="https://github.com/GRiveroll86/JCPGMarketWatch" target="_blank">JCPG Market<span id="accentLetter2">Watch</a></span></h3>
-                    <a href="https://griveroll86.github.io/JCPGMarketWatch/stockticker.html" target="_blank"><img src="./assets/images/project_1_image.png" class="project1img" /></a>
-                </div>
+        <div id="about-me-container">
+
+            <aside id="about-me-title-container">
+                <h2 id="about-me-title">About Me</h2>
+            </aside>
+    
+            <div id="about-me-content-container">
+                <p id="about-me-content">
+                    Hello! My name is Greg Riveroll. I've been in corrections for over six years as an officer and a storekeeper in the commissary. My passion for
+                    computers and technology led me to seek further education in web development as I hope to pursue an exciting new career path. Below are some examples
+                    of my work and their respective github repositories. My contact information can be found in the footer at the bottom of this page. Feel free to reach
+                    out with any questions or comments. Thanks and enjoy!
+                </p>
             </div>
-            <div class="project2and3div">
-                <div class="project2">
-                    <h3><a href="https://github.com/GRiveroll86/weather" target="_blank">Weather <span id="accentLetter2">Dashboard</a></span></h3>
-                    <a href="https://griveroll86.github.io/weather/" target="_blank"><img src="./assets/images/project_2_image.png" class="project2img"/></a>
+
+        </div>
+
+        <div id="projects-container">
+            
+            <aside id="projects-title-container">
+                <h2 id="projects-title">Projects</h2>
+            </aside>
+    
+            <div id="projects-content-container">
+                <div class="project-content">
+                    <h4 class="project-name">I Choose Who?</h4>
+                    <div class="project-img-lg-container">
+                        <img src="assets/images/i-choose-who.png" class="project-img-lg">
+                    </div>
+                    <div class="project-link-repo-container">
+                        <a href="http://www.ichoosewho.com" target="_blank" class="project-link">Project Link</a><a href="https://github.com/GRiveroll86/I-Choose-Who" target="_blank"class="project-repo">Repository Link</a>
+                    </div>  
                 </div>
-                <div class="project3">
-                    <h3><a href="https://github.com/GRiveroll86/scheduler" target="_blank">Work Day <span id="accentLetter2">Scheduler</a></span></h3>
-                    <a href="https://griveroll86.github.io/scheduler/" target="_blank"><img src="./assets/images/project_3_image.png" class="project3img"/></a>
+
+                <div class="project-content">
+                    <h4 class="project-name">JCPG MarketWatch</h4>
+                    <div class="project-img-sm-container">
+                        <img src="assets/images/jcpg-marketwatch.png" class="project-img-sm">
+                    </div>
+                    <div class="project-link-repo-container">
+                        <a href="https://jcgasper.github.io/JCPGMarketWatch/stockticker.html" target="_blank" class="project-link">Project Link</a><a href="https://github.com/GRiveroll86/JCPGMarketWatch" target="_blank"class="project-repo">Repository Link</a>
+                    </div> 
                 </div>
-            </div>
-            <div class="project4and5div">
-                <div class="project4">
-                    <h3>Project <span id="accentLetter2">4</span></h3>
-                    <a href="https://google.com" target="_blank"><img src="https://via.placeholder.com/350x100" class="project4img"/></a>
+
+                <div class="project-content">
+                    <h4 class="project-name">Note Taker</h4>
+                    <div class="project-img-sm-container">
+                        <img src="assets/images/note-taker.png" class="project-img-sm">
+                    </div>
+                    <div class="project-link-repo-container">
+                        <a href="https://ancient-cove-61796.herokuapp.com/" target="_blank" class="project-link">Project Link</a><a href="https://github.com/GRiveroll86/note-taker" target="_blank"class="project-repo">Repository Link</a>
+                    </div>
                 </div>
-                <div class="project5">
-                    <h3>Project <span id="accentLetter2">5</span></h3>
-                    <a href="https://google.com" target="_blank"><img src="https://via.placeholder.com/350x100" class="project5img"/></a>
+
+                <div class="project-content">
+                    <h4 class="project-name">Work Day Scheduler</h4>
+                    <div class="project-img-sm-container">
+                        <img src="assets/images/work-day-scheduler.png" class="project-img-sm">
+                    </div>
+                    <div class="project-link-repo-container">
+                        <a href="https://griveroll86.github.io/scheduler/" target="_blank" class="project-link">Project Link</a><a href="https://github.com/GRiveroll86/scheduler" target="_blank"class="project-repo">Repository Link</a>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <h4 class="project-name">Weather Dashboard</h4>
+                    <div class="project-img-sm-container">
+                        <img src="assets/images/weather-dashboard.png" class="project-img-sm">
+                    </div>
+                    <div class="project-link-repo-container">
+                        <a href="https://griveroll86.github.io/weather/" target="_blank" class="project-link">Project Link</a><a href="https://github.com/GRiveroll86/weather" target="_blank"class="project-repo">Repository Link</a>
+                    </div>   
                 </div>
             </div>
 
         </div>
+
     </main>
 
-    <footer class="contact">
-        <a id="contact"></a>
-        <ul>
+    <footer id="">
+        
+        <!-- <ul>
             <li>
                 <a href="https://github.com/GRiveroll86" target="_blank" class="navLink">GitHub</a>
             </li>
@@ -89,8 +135,25 @@
             <li>
                 <a href="tel:8584656739" class="navLink">Phone</a>
             </li>
-        </ul>
+        </ul> -->
+
+        <nav id="contact-container">
+            <div class="nav-link">
+                <a href="https://github.com/GRiveroll86" target="_blank" class="link"><strong>GITHUB</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="https://www.linkedin.com/in/greg-riveroll-2589a31b1/" target="_blank" class="link"><strong>LINKEDIN</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="mailto:griveroll86@gmail.com" class="link"><strong>EMAIL</strong></a>
+            </div>
+            <div class="nav-link">
+                <a href="tel:8584656739" class="link"><strong>PHONE</strong></a>
+            </div>
+        </nav>
+
     </footer>
+
 </body>
 
 </html>

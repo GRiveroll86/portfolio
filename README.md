@@ -1,7 +1,7 @@
 # Advanced CSS
 
 ## Website Link
-[Professional Portfolio](https://griveroll86.github.io/portfolio/)
+[Portfolio](https://griveroll86.github.io/portfolio/)
 
 ## Portfolio
 
@@ -13,4 +13,4 @@ This assignment asked us to create a portfolio using CSS that included our name,
 * style.css
 
 ## Website Preview
-![website preview image](./assets/images/portfolioPreview.png)
+![website preview image](./assets/images/preview.png)
