@@ -2,144 +2,163 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-image: linear-gradient(rgb(40, 40, 40), rgb(160, 160, 160));
-    background-color: slategrey;
-    border-bottom: 2px solid deepskyblue;
-}
-
-h1 {
-    letter-spacing: .3em;
-    font-family: Helvetica, sans-serif;
-    font-size: 72px;
-    color: white;
+header, footer {
     text-align: center;
-    padding: 25px;
+    background-color: darkslategrey;
 }
 
-.avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid darkblue;
-    background-color: slateblue;
-}
-
-img {
-    border: 1px solid darkblue;
-}
-
-article {
-    border-bottom: 2px solid deepskyblue;
-}
-
-h2 {
-    padding: 25px;
-    text-align: center;
-    font-size: 36px;
-}
-
-h3 {
-    padding: 10px;
-    font-size: 24px;
-}
-
-nav {
+#name-container {
     padding: 2%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.navLink {
-    font-size: 24px;
+#name {
+    font-size: 5em;
 }
 
-ul, li {
+#portrait-container {
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+#portrait {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+#navbar-container {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: darkgrey;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.nav-link {
     display: inline;
-    padding-inline: 25px;
+    font-size: 1.5em;
 }
 
-main {
-    background-image: linear-gradient(to top, rgb(40, 40, 40), rgb(160, 160, 160));
+.link {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    color: black;
 }
 
-p {
-    font-weight: normal;
-    font-size: 22px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutMe p {
-    padding: 5%;
-}
-
-.work {
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid deepskyblue;
-}
-
-.contact {
-    padding: 2%;
-}
-
-#accentLetter {
-    color: slateblue;
-}
-
-#accentLetter2 {
-    color: white;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.projects {
-    padding: 5%;
-}
-
-.project1div, .project2and3div, .project4and5div {
-    display: flex;
-    justify-content: center;
-}
-
-.project1 {
-    padding: 2%;
-    justify-content: center;
-    margin: auto;
-}
-
-.project2, .project3, .project4, .project5 {
-    padding: 2%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.project1img, .project2img, .project3img, .project4img, .project5img {
-    position: relative;
-    transition: all .5s;
-    width: 100%;
-}
-
-.project1img:hover, .project2img:hover, .project3img:hover, .project4img:hover, .project5img:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
+.link:hover {
     cursor: pointer;
-    border: 2px solid deepskyblue;
-    transform-origin: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 
-@media all and (max-width: 800px) {
-    .project1div, .project2and3div, .project4and5div {
-        flex-direction: column;
-    }
+#main-container {
+    background: lightsteelblue;
+}
+
+#about-me-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 2%;
+    display: flex;
+}
+
+#about-me-title-container {
+    margin: 2%;
+    padding-right: 4%;
+    width: 25%;
+    border-right: 5px solid black;
+}
+
+#about-me-content-container {
+    margin: 2%;
+    width: 75%;
+}
+
+#about-me-title {
+    font-size: 2em;
+    text-align: right;
+}
+
+#about-me-content {
+    font-size: 1.3em;
+    margin-bottom: 2%;
+}
+
+#projects-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+}
+
+#projects-title-container {
+    margin: 2%;
+    padding-right: 4%;
+    width: 25%;
+    border-right: 5px solid black;
+}
+
+#projects-title {
+    font-size: 2em;
+    text-align: right;
+}
+
+#projects-content-container {
+    margin: 2%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content {
+    font-size: 1.3em;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 4px 4px black;
+}
+
+.project-img-lg {
+    width: 100%;
+    height: auto;
+}
+
+.project-img-sm {
+    height: 150px; 
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.project-repo {
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+.project-link:hover, .project-repo:hover {
+    text-decoration: underline;
+}
+
+#contact-container {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: darkgrey;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
